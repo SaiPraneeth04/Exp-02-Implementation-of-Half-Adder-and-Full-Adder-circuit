@@ -43,12 +43,41 @@ RegisterNumber:
 */
 Logic symbol & Truthtable
 RTL realization
+### Program:
+#### Half adder:
+```python
+module exp2(a,b,sum,carry);
+input a,b;
+output sum,carry;
+  xor(sum,a,b);
+  and(carry,a,b);
+endmodule
+```
+#### Full adder:
+```python
+module exp3(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=((a^b)^c);
+assign carry=((a&b)|(b&c)|(c&a));
+endmodule
+```
+## Output:
+half adder:
+![MODEL](exp2.3.png)
+full adder:
+![MODEL](exp3.3.png)
+## RTL:
+half adder:
+![MODEL](exp2.4.png)
+full adder:
+![MODEL](exp2.4.png)
+## TRUTH TABLE: 
+half adder:
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+![MODEL](2.5.png)
 
-
-### TRUTH TABLE 
-
-### Result:
+full adder:
+![MODEL](3.5.png)
+## Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
