@@ -63,15 +63,16 @@ assign carry=((a&b)|(b&c)|(c&a));
 endmodule
 ```
 ## Output:
+## RTL:
 half adder:
 ![MODEL](exp2.3.png)
 full adder:
 ![MODEL](exp3.3.png)
-## RTL:
+## TIME DIAGRAM:
 half adder:
 ![MODEL](exp2.4.png)
 full adder:
-![MODEL](exp2.4.png)
+![MODEL](exp3.4.png)
 ## TRUTH TABLE: 
 half adder:
 
